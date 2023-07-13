@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c example.c -o $(basename -s .c example.c).o
+gcc -c $CFILE
