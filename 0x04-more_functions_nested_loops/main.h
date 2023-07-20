@@ -1,1 +1,1 @@
-int _isupper(int c);
+0-isupper.c
