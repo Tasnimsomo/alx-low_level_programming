@@ -1,6 +1,20 @@
 #include <stdio.h>
 
-/**
+ /** main main function
+   *
+   *Return: Always 0.
+  */
+
+ void print_alphabet(void);
+
+ int main(void)
+ {
+        print_alphabet();
+        return (0);
+ }
+ 
+ 
+ /**
   *void print_alphabet - function for printing alphabets
  */
 
@@ -14,15 +28,4 @@
 
         putchar('\n');
 
- }
-
- /** main main function
-   *
-   *Return: Always 0.
-  */
-
- int main(void)
- {
-        print_alphabet();
-        return (0);
  }
