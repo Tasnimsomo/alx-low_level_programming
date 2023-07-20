@@ -6,11 +6,13 @@
  * Return: 0 or 1
  */
 
+
 int void print_numbers(void)
-{
-        for(i = 0 ; i < = 9 ; i++)
+{       char c;
+        for(c = '0' ; c < = '9' ; c++)
         {
             putchar(i);
         }
         putchar('\n');
 }
+
