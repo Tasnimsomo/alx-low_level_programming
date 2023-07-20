@@ -1,22 +1,11 @@
-include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
- * main - check the code.
+ * _isupper - uppercase letters
+ * @c: character to check
  *
- * Return: Always 0.
+ * Return: 0 or 1
  */
-
- int _isupper(int c);
- int main(void)
- {
-     char c;
-     c = 'a';
-
-     return 0 ;
-
-
- }
 
  int _isupper(int c)
  {
