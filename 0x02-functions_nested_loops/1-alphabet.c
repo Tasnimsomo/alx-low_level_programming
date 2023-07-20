@@ -9,18 +9,18 @@
         int i;
         for ( i = 'a' ; i <= 'z'; i++)
         {
-            _putchar(i);
+            putchar(i);
         }
 
-        _putchar('\n');
+        putchar('\n');
 
  }
 
  /** main main function
-   * 
+   *
    *Return: Always 0.
   */
-   
+
  int main(void)
  {
         print_alphabet();
