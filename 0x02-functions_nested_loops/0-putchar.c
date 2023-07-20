@@ -1,7 +1,9 @@
 #include <stdio.h>
-/** main - prints putchar followed by a new line
- ** return: 0
-**/
+/**
+  *main - prints _putchar followed by a new line
+  *
+  *Return: Always 0.
+  */
  
 void print_putchar()
 {
@@ -16,8 +18,9 @@ void print_putchar()
         printf("\n");
 }
 
-int main()
+int main(void)
 {
         print_putchar();
+        
         return 0;
 }
