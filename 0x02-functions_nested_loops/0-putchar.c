@@ -1,26 +1,29 @@
 #include <stdio.h>
+
 /**
-  *main - prints _putchar followed by a new line
-  *
-  *Return: Always 0.
-  */
- 
-void print_putchar()
+ * print_putchar - prints the string "_putchar\n" to the console
+ */
+void print_putchar(void)
 {
-        printf("_");
-        printf("p");
-        printf("u");
-        printf("t");
-        printf("c");
-        printf("h");
-        printf("a");
-        printf("r");
-        printf("\n");
+    putchar('_');
+    putchar('p');
+    putchar('u');
+    putchar('t');
+    putchar('c');
+    putchar('h');
+    putchar('a');
+    putchar('r');
+    putchar('\n');
 }
 
+/**
+ * main - the entry point of the program
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-        print_putchar();
-        
-        return 0;
+    print_putchar();
+
+    return (0);
 }
