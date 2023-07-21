@@ -1,20 +1,18 @@
 #include "main.h"
 
 /**
- *void print_numbers(void)
- *
- * Return: 0 or 1
- */
-
+*print_numbers - print 0123456789
+* owned by Bwave ICT
+*Return: void
+*/
 
 void print_numbers(void)
 {
-        char c;
-	
-        for(c = '0' ; c <= '9' ; c++)
-        {
-           _ putchar(c);
-        }
-       _ putchar('\n');
-}
+	char c;
 
+	for (c = '0'; c <= '9'; c++)
+	{
+	_putchar(c);
+	}
+	_putchar('\n');
+}
