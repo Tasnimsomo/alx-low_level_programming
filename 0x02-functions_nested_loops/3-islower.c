@@ -1,10 +1,10 @@
 #include "main.h"
-#include <unistd.h>
 #include <stdio.h>
+
 /**
-  *int _islower(int c) - checks for lowercase letters.
+  * islower -checks for lowercase letters
   *
-  *Return: 1 if lowercase or 0 if otherwise.
+  *return 1 if lowercase and 0 otherwise
 **/
 
 int _islower(int c)
@@ -14,6 +14,4 @@ int _islower(int c)
             else
                 return (0);
 
-	    
 }
-
