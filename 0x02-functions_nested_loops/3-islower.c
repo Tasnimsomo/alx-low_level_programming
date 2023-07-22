@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 #include "main.h"
 
 /**
@@ -7,6 +6,7 @@
   *
   *return 1 if lowercase and 0 otherwise
 **/
+
 
 int _islower(int c)
 {
