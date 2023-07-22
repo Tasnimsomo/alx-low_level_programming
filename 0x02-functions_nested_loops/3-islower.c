@@ -1,5 +1,4 @@
-#include "main.h"
-#include <stdio.h>
+#include "hoberlton.h"
 
 /**
   * islower -checks for lowercase letters
