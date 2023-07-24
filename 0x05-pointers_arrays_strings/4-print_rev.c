@@ -7,7 +7,7 @@
  * Return: 0 is success
  */
 
-void _print_rev(char *s) 
+void print_rev(char *s) 
 {
 char *end = s; 
 while (*end != 0)
