@@ -6,7 +6,7 @@
  * Return: 0 is success
  */
 
-void print_half_string(char *str)
+void puts_half(char *str)
 {
 int half_len;
 int i;
