@@ -7,7 +7,6 @@
  *
  *Return: 0 is success
  */
-
 void puts2(char *str)
 {
 while (*str)
