@@ -5,7 +5,7 @@
  * @s: the string to be printed in rev
  */
 
-void reverse_string(char *str)
+void rev_string(char *str)
 {
 int i, j;
 char temp;
