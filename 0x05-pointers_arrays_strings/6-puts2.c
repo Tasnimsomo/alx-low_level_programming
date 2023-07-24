@@ -9,8 +9,6 @@
  */
 void puts2(char *str)
 {
-if (strlen(str) % 2 != 0)
-return 1;
 while (*str)
 {
 _putchar(*str);
