@@ -19,7 +19,11 @@ if (len % 2 != 0)
 {
 half_len = (len - 1) / 2;
 }
-for (i = 0; i < half_len; i++)
+else
+{
+half_len = (len - 1) / 2;
+}   
+for (i = half_len; i < len; i++)
 {
 _putchar(str[i]);
 }
