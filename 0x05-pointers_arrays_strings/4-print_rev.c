@@ -2,23 +2,21 @@
 
 /**
  * print_rev - prints string in reverse *
- * @str: char to check
+ * @s: char to check
  *
  * Return: 0 is success
  */
-
-void print_rev(char *s) 
+void print_rev(char *s)
 {
-char *end = s; 
-while (*end != 0)
+int i ;
+int n = 0;
+while (*s[n] != 0)
 {
-end++;
+n++;
 }
-end--;  
-while(s < end)
+for(i = n -1 ; i >= 0 ; i--)
 {
-_putchar(*end);         
-end--;                 
-}        
+_putchar(s[i]);
+}
 _putchar('\n');
 }
