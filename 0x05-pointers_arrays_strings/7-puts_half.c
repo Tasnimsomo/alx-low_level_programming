@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts_half - prints half of a string
+ * puts_half - prints second half of a string
  * @str: char to check
  *
  * Return: 0 is success
