@@ -1,5 +1,5 @@
 #include "main.h"
-  /**
+/**
  * puts_half - prints half of a string
  * @str: char to check
  *
@@ -8,12 +8,13 @@
 
 void print_half_string(char *str)
 {
+int half_len;
 int i;
 int len = 0;
 while (str[len] != '\0') {
 len++;
 }
-int half_len = len / 2;
+half_len = len / 2;
 if (len % 2 != 0)
 {
 half_len = (len - 1) / 2;
