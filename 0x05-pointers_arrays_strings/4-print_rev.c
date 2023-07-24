@@ -7,15 +7,15 @@
  * Return: 0 is success
  */
 
-void _puts(char *str) 
+void _print_rev(char *s) 
 {
-char *end = str; 
+char *end = s; 
 while (*end != 0)
 {
 end++;
 }
 end--;  
-while(str < end)
+while(s < end)
 {
 _putchar(*end);         
 end--;                 
