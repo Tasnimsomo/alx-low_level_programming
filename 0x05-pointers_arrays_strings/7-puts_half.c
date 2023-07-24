@@ -6,20 +6,26 @@
  * Return: 0 is success
  */
 
+#include "main.h"
+/**
+ * puts_half - prints half of a string
+ * @str: char to check
+ *
+ * Return: 0 is success
+ */
 void puts_half(char *str)
 {
-int len = strlen(str);
-int half_len;
-if (len % 2 == 0)
-{
-half_len = len / 2;
-}
-else
-{
-half_len = (len - 1) / 2;
-}
-for (int i = half_len; i < len; i++) {
-_putchar(str[i]);
-}
-_putchar('\n');
+	int string = 0, n;
+
+	while (str[string] != '\0')
+		string++;
+	if (string + 1 % 2 != '0')
+		n = (string - 1) / 2;
+	else
+		n = (string / 2);
+	n++;
+
+	for (string = n; str[string] != '\0'; string++)
+	_putchar(str[string]);
+	_putchar('\n');
 }
