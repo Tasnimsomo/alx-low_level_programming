@@ -2,7 +2,7 @@
 
 /**
  *print_line - draws a straight line in the terminal.
- *@n - character to test.
+ *@n - Number of times _ should be printed.
  *Return: draws a straight line in the terminal.
  */
 void print_line(int n)
