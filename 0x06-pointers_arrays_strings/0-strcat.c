@@ -16,7 +16,7 @@ dest++;
 while (*src)
 {
 *dest = *src;
-*dest++;
+dest++;
 src++;
 }
 *dest = '\0';
