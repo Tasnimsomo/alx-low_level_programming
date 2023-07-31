@@ -10,3 +10,4 @@ char *_memset(char *s, char b, unsigned int n);
 int putchar(); 
 int putchar(int); 
 int _putchar(char c); 
+int _putchar(int c); 
