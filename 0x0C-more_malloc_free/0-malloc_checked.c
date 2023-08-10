@@ -5,8 +5,8 @@
 
 /**
  *malloc_checked - allocates memory.
- *@b - character to test
- *Return void pointer.
+ *@b : size of memory to be allocated
+ *Return void pointer if successful and exit(98) if fails.
  */
 void *malloc_checked(unsigned int b)
 {
