@@ -11,17 +11,9 @@ if (d == NULL)
 {
 return;
 }
-if((*d).age == 0)
-{
-printf("nil");
-}
-else
-{
-printf("Age: %f\n", (*d).age);
-}
 if((*d).name == NULL)
 {
-printf("nil");
+printf("Name: (nil)\n");
 }
 else
 {
@@ -29,7 +21,7 @@ printf("Name: %s\n", (*d).name);
 }
 if((*d).owner == NULL)
 {
-printf("nil");
+printf("Owner: (nil)\n");
 }
 else
 {
