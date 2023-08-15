@@ -12,14 +12,14 @@ if (d == NULL)
 {
 return;
 }
-else if(strcmp((*d).name,(*d).age,(*d).owner) == NULL)
+else if(((*d).name == NULL || (*d).age == 0 ||(*d).owner ==  NULL))
 {
-printf("nil")
+printf("nil");
 }
 else
 {
-printf("Name: %s", (*d).name);
-printf("\nAge: %f", (*d).age);
-printf("\nOwner: %s", (*d).owner);
+printf("Name: %s\n", (*d).name);
+printf("Age: %f\n", (*d).age);
+printf("Owner: %s\n", (*d).owner);
 }
 }
