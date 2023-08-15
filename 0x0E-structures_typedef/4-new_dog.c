@@ -9,27 +9,47 @@
  *@owner: char
  * Return: new dog
  */
-dog_t* new_dog(char* name, float age, char* owner) {
-if (name == NULL || owner == NULL) {
-return NULL;
+
+dog_t *new_dog(char *name, float age, char *owner)
+{
+
+char *name2;
+char *owner2;
+int n, o, i, j;
+struct dog *newDog;
+newDog = malloc(sizeof(struct dog));
+if (newDog == NULL)
+return (NULL);
+for (n = 0; *(name + n) != '\0'; n++)
+;
+for (o = 0; *(owner + o) != '\0'; o++)
+;
+name2 = malloc(n + 1);
+if (name2 != NULL)
+{
+for (i = 0; i <= n; i++)
+*(name2 + i) = *(name + i);
 }
-dog_t* newDog = malloc(sizeof(dog_t));
-if (newDog == NULL) {
-return NULL;
-}
-newDog->name = malloc(strlen(name) + 1);
-if (newDog->name == NULL) {
+else
+{
 free(newDog);
-return NULL;
+return (NULL);
 }
-strcpy(newDog->name, name);
-newDog->owner = malloc(strlen(owner) + 1);
-if (newDog->owner == NULL) {
-free(newDog->name);
+owner2 = malloc(o + 1);
+if (owner2 != NULL)
+{
+for (j = 0; j <= o; j++)
+*(owner2 + j) = *(owner + j);
+}
+else
+{
+free(name2);
 free(newDog);
-return NULL;
+return (NULL);
 }
-strcpy(newDog->owner, owner);
+newDog->name = name2;
 newDog->age = age;
-return newDog;
+newDog->owner = owner2;
+return (newDog);
 }
+
