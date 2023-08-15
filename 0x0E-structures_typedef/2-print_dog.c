@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- *print_dog-prints struct dog.
- *@d : structure.
- *Return:Nothing.
+ * print_dog - print atributes of dog struct
+ *@d:dog struct
+ * Return: no return
  */
 void print_dog(struct dog *d)
 {
