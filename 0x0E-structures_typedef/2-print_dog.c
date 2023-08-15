@@ -12,7 +12,7 @@ if (d == NULL)
 {
 return;
 }
-else if(((*d).name == NULL || (*d).age == 0 ||(*d).owner ==  NULL))
+else if(((*d).name == NULL || (*d).owner ==  NULL))
 {
 printf("nil");
 }
