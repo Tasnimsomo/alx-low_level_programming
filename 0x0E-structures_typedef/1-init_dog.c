@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * init_dog - Initialize struct dog
+ *init_dog - Initialize struct dog
  *@d:structure
  *@name:name type char
  *@age: age type float
