@@ -1,4 +1,3 @@
-#include "function_pointers.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,4 +14,5 @@ if (action != NULL)
 for (i = 0; i < size ; i++)
 {
 action(array[i]);
+}
 }
