@@ -3,13 +3,14 @@
 #include <stdlib.h>
 
 /**
- * print_name - prints a name
- * @name: name of the person
- *@f: function pointer
- * Return: Nothing.
+ * print_name - Print a name
+ *@name:name
+ *@f:ponter to function
+ *
+ * Return: no return
  */
 void print_name(char *name, void (*f)(char *))
 {
-if (f != NULL)
-f(name);
+	if (f != NULL)
+		f(name);
 }
