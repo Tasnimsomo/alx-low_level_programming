@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * array_iterator - prints an integer
  * @action: function pointer
+ *@size : size of array
  *@array : argument
  * Return: Nothing.
  */
