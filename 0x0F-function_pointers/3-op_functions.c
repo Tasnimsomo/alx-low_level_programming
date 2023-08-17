@@ -10,7 +10,7 @@
 
 int op_add(num1, num2 )
 {
-return num1 + num2;
+return (num1 + num2);
 }
 
 /**
@@ -22,7 +22,7 @@ return num1 + num2;
 
 int op_sub(num1 ,num2)
 {
-return num1 - num2;
+return (num1 - num2);
 }
 
 /**
@@ -34,7 +34,7 @@ return num1 - num2;
 
 int op_mul(num1 , num2)
 {
-return num1 * num2;
+return (num1 * num2);
 }
 
 /**
@@ -51,7 +51,7 @@ if (num2 == 0)
 printf("Error\n");
 exit(100);
 }
-return num1 / num2;
+return (num1 / num2);
 }
 
 /**
@@ -68,5 +68,5 @@ if (num2 == 0)
 printf("Error\n");
 exit(100);
 }
-return num1 % num2;
+return (num1 % num2);
 }
