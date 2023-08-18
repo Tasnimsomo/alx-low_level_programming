@@ -15,8 +15,8 @@ return (0);
 }
 else
 {
-int sum = 0;
-int i;
+unsigned int sum = 0;
+unsigned int i;
 va_list ptr;
 va_start(ptr, n);
 for (i = 0 ; i < n ; i++)
