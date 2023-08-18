@@ -14,7 +14,7 @@ va_start(ptr, n);
 unsigned int i;
 if (separator == NULL)
 {
-printf("%d", va_arg(ptr, unsigned int);
+printf("%d", va_arg(ptr, unsigned int));
 }
 else
 {
