@@ -23,4 +23,4 @@ sum =+ va_arg(ptr ,unsigned int);
 va_end(ptr);
 return (sum);
 }
-}
+
