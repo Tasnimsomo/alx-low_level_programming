@@ -11,6 +11,8 @@ int sum_them_all(const unsigned int n, ...)
 {
 if (n == 0)
 return (0);
+else
+{
 unsigned int sum;
 unsigned int i;
 va_list ptr;
@@ -23,4 +25,4 @@ sum =+ va_arg(ptr ,unsigned int);
 va_end(ptr);
 return (sum);
 }
-
+}
