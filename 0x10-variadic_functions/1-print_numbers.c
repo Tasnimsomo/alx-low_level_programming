@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include <stddef.h>
+
 /**
  *print_numbers - prints numbers followed by new line.
  *@separator:string to be printed between numbers
  *@n: number of integers passed to the function
  *Return: numbers followed by new line.
  */
-
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+unsigned int i;
 va_list ptr;
 va_start(ptr, n);
-unsigned int i;
 for (i = 0; i < n; i++)
 {
 if (separator != NULL && i != (n -1))
