@@ -3,9 +3,9 @@
 #include <stdarg.h>
 
 /**
- *sum_them_all - finds sum of all its parameters.
+ *sum_them_all- finds sum of all its parameters.
  *@n:  number of parameters.
- *Return : sum of all its parameters.
+ *Return: sum of all its parameters.
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -23,4 +23,3 @@ sum = sum + va_arg(ptr, unsigned int);
 va_end(ptr);
 return (sum);
 }
-
