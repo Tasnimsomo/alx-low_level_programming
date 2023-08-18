@@ -9,7 +9,6 @@
  *Return: prints strings, followed by a new line.
  */
 void print_strings(const char *separator, const unsigned int n, ...)
-{
 unsigned int i;
 va_list ptr;
 va_start(ptr,n);
@@ -20,9 +19,14 @@ if (string == NULL)
 {
 printf("(nil)");
 }
- if (separator != NULL && i != (n -1))
+else if (string[0] == '\0')
 {
-  printf("%s%s", string, separator);
+continue;  // Skip empty strings
+}
+else
+if (separator != NULL && i != (n -1))
+{
+printf("%s%s", string, separator);
 }
 else
 {
