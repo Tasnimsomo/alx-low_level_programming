@@ -14,7 +14,7 @@ va_start(ptr, n);
 unsigned int i;
 for (i = 0; i < n; i++)
 {
-if (separator =! NULL && i != (n -1))
+if (separator != NULL && i != (n -1))
 {
 printf("%d%s", va_arg(ptr, unsigned int),separator);
 }
