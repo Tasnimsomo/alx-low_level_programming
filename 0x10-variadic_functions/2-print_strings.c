@@ -20,11 +20,6 @@ if (string == NULL)
 {
 printf("(nil)");
 }
-else if (string[0] == '\0')
-{
-continue;  // Skip empty strings
-}
-else
 if (separator != NULL && i != (n -1))
 {
 printf("%s%s", string, separator);
@@ -37,4 +32,3 @@ printf("%s", string);
 printf("\n");
 va_end(ptr);
 }
-
