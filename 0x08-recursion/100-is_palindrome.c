@@ -3,6 +3,7 @@
 #include "main.h"
 
 /**
+ *is_palindrome_recursive- helper function.
  *is_palindrome- returns 1 if a string is a palindrome and 0 if not.
  *@s: character to test.
  *@left: character to test.
