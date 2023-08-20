@@ -7,16 +7,19 @@
  *@s: character to test.
  *Return:1 if a string is a palindrome and 0 if not.
  */
-int is_palindrome(char *s)
+int is_palindrome_recursive(char *s, int left, int right)
 {
+if (left >= right)
+{
+return (1);  
+}
+if (s[left] != s[right]) {
+return (0); 
+}
+return is_palindrome_recursive(s, left + 1, right - 1);
+}
+int is_palindrome(char *s) {
 int length = strlen(s);
-int i, j;
-for (i = 0, j = length - 1; i < j; i++, j--)
-{
-if (s[i] != s[j])
-{
-return (0);  
+return is_palindrome_recursive(s, 0, length - 1);
 }
-}
-return (1);
-}
+
