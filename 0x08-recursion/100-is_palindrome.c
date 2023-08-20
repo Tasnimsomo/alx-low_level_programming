@@ -15,8 +15,8 @@ for (i = 0, j = length - 1; i < j; i++, j--)
 {
 if (s[i] != s[j])
 {
-return (0);  // Not a palindrome
+return (0);  
 }
 }
-return (1);  // Palindrome
+return (1);
 }
