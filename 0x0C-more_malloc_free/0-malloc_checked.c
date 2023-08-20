@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- *malloc_checked - allocates memory.
+ *malloc_checked- allocates memory.
  *@b : size of memory to be allocated
  *Return void pointer if successful and exit(98) if fails.
  */
@@ -15,7 +15,7 @@ if (ptr == NULL)
 {
 exit(98);
 }
-return (ptr);  
+return (ptr);
 }
 
  
