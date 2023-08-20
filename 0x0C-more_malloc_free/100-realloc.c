@@ -8,30 +8,31 @@
  *@ptr: pointer to the memory previously allocated
  *@old_size:is the size, in bytes, of the allocated space for ptr
  *@new_size: is the new size, in bytes of the new memory block
+ *Return:pointer to new memory block.
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-if (new_size == 0)
+char *result;
+unsigned int i;
+if (new_size == old_size)
+return (ptr);
+if (new_size == 0 && ptr != NULL)
 {
 free(ptr);
 return (NULL);
 }
 if (ptr == NULL)
 {
-return (malloc(new_size));
-}
-if (new_size == old_size)
-{
-return (ptr);
-}
-void *new_ptr = malloc(new_size);
-if (new_ptr == NULL)
-{
+result = malloc(new_size);
+if (result == NULL)
 return (NULL);
+return (result);
 }
-}
-unsigned int min_size = (old_size < new_size) ? old_size : new_size;
-memcpy(new_ptr, ptr, min_size);
+result = malloc(new_size);
+if (result == NULL)
+return (NULL);
+for (i = 0; i < old_size && i < new_size; i++)
+result[i] = ((char *)ptr)[i];
 free(ptr);
-return (new_ptr);
+return (result);
 }
