@@ -14,7 +14,7 @@ int is_palindrome_recursive(char *s, int left, int right)
 {
 if (left >= right)
 {
-return (1)
+return (1);
 }
 if (s[left] != s[right])
 {
