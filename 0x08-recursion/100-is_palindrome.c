@@ -4,7 +4,6 @@
 
 /**
  *is_palindrome_recursive- helper function.
- *is_palindrome-returns 1 if a string is a palindrome and 0 if not.
  *@s: character to test.
  *@left: character to test.
  *@right: character to test.
@@ -22,6 +21,10 @@ return (0);
 }
 return (is_palindrome_recursive(s, left + 1, right - 1));
 }
+/**
+ *is_palindrome-returns 1 if a string is a palindrome and 0 if not.
+ *@s:character to test.
+ */
 int is_palindrome(char *s)
 {
 int length = strlen(s);
