@@ -4,7 +4,7 @@
 
 /**
  *is_palindrome_recursive- helper function.
- *is_palindrome- returns 1 if a string is a palindrome and 0 if not.
+ *is_palindrome-returns 1 if a string is a palindrome and 0 if not.
  *@s: character to test.
  *@left: character to test.
  *@right: character to test.
@@ -14,11 +14,11 @@ int is_palindrome_recursive(char *s, int left, int right)
 {
 if (left >= right)
 {
-return (1);  
+return (1)
 }
 if (s[left] != s[right])
 {
-return (0); 
+return (0);
 }
 return (is_palindrome_recursive(s, left + 1, right - 1));
 }
