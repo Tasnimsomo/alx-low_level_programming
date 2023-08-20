@@ -4,11 +4,12 @@
 #include <stddef.h>
 
 /**
- * _realloc- eallocates a memory block 
- *@ptr: pointer to the memory previously allocated
- *@old_size:size in bytes of allocated space for ptr
- *@new_size:new size, in bytes of the new memory block
- *Return:pointer to new memory block.
+ * _realloc - reallocates a memory block using malloc and free
+ * @ptr: pointer to the memory previously allocated with a call to malloc
+ * @old_size: size, in bytes, of the allocated space for ptr
+ * @new_size: new size, in bytes of the new memory block
+ *
+ * Return: pointer to the new memory block
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
