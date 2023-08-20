@@ -29,3 +29,9 @@ if (new_ptr == NULL)
 {
 return (NULL);
 }
+}
+unsigned int min_size = (old_size < new_size) ? old_size : new_size;
+memcpy(new_ptr, ptr, min_size);
+free(ptr);
+return (new_ptr);
+}
