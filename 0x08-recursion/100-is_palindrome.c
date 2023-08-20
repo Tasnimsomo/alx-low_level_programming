@@ -24,7 +24,7 @@ return (is_palindrome_recursive(s, left + 1, right - 1));
 /**
  *is_palindrome-returns 1 if a string is a palindrome and 0 if not.
  *@s:character to test.
- *Return:palindrome 
+ *Return:palindrome
  */
 int is_palindrome(char *s)
 {
