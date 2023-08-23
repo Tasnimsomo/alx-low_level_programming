@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  * argstostr - concatenate all arguments of your program with newline
  * @ac: argument count
@@ -20,7 +21,7 @@ for (j = 0; *(*(av + i) + j) != '\0'; j++, total++)
 total++;
 }
 total++;
-a = malloc(total * sizeof(char));
+a = malloc(total *sizeof(char));
 if (a == NULL)
 return (NULL);
 retp = a;
