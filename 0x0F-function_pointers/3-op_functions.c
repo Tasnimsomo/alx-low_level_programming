@@ -1,72 +1,21 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "3-calc.h"
 
-/**
- *op_add - finds sum.
- *@a: character to test.
- *@b: character to test.
- *return: sum of a and b.
- */
-
-int op_add(num1, num2 )
-{
-return (num1 + num2);
+int op_add(int a, int b) {
+return (a + b);
 }
 
-/**
- *op_sub - finds difference
- *@a: character to test.
- *@b: character to test.
- *return : difference of a and b.
- */
-
-int op_sub(num1 ,num2)
-{
-return (num1 - num2);
+int op_sub(int a, int b) {
+return (a - b);
 }
 
-/**
- *op_mul - finds multiplication
- *@a : character to test.
- *@b : character to test.
- *return - product of a and b.
- */
-
-int op_mul(num1 , num2)
-{
-return (num1 * num2);
+int op_mul(int a, int b) {
+return (a * b);
 }
 
-/**
- *op_div - finds division.
- *@a : character to test.
- *@b : character to test.
- *return : division of a and b.
- */
-
-int op_div(num1 , num2)
-{
-if (num2 == 0)
-{
-printf("Error\n");
-exit(100);
-}
-return (num1 / num2);
+int op_div(int a, int b) {
+return (a / b);
 }
 
-/**
- *op_mod -returns the remainder of the division 
- *@a : character to test.
- *@b : character to test.
- *return : returns the remainder of the division .
- */
-
-int op_mod(num1 , num2)
-{
-if (num2 == 0)
-{
-printf("Error\n");
-exit(100);
-}
-return (num1 % num2);
+int op_mod(int a, int b) {
+return (a % b);
 }

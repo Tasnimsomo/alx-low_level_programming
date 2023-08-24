@@ -1,28 +1,22 @@
-#include <stdio.h>
 #include "3-calc.h"
 
-/**
- * get_op_func - searchs for an integer
- *@s:string
- *
- * Return: no return
- */
-int (*get_op_func(char *s))(int, int);
+int (*get_op_func(char s))(int, int) {
 op_t ops[] = {
 {"+", op_add},
 {"-", op_sub},
-{"*", op_mul},
+{"", op_mul},
 {"/", op_div},
 {"%", op_mod},
 {NULL, NULL}
 };
-int i;
-i = 0;
-while (i < 5)
-{
-if (s[0] == ops[i].op[0])
-return ((ops[i].f));
+
+int i = 0;
+
+while (ops[i].op != NULL && strcmp(ops[i].op, s) != 0)
 i++;
-}
-return (NULL);
+
+if (ops[i].op == NULL)
+return NULL;
+
+return ops[i].f;
 }
