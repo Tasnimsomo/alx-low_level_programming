@@ -2,17 +2,17 @@
 
 /**
  *factorial - returns factorial of a given number.
- *@i: integer to test.
+ *@n: integer to test.
  *Return:Nothing
  */
-int factorial(int i)
+int factorial(int n)
 {
-if (i <= 0)
+if (n <= 0)
 {
 return (-1);
 }
 else
 {
-return (i * factorial(i - 1));
+return (n * factorial(n - 1));
 }
 }
