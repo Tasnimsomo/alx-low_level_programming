@@ -18,6 +18,6 @@ return (1);
 }
 else
 {
-return x * _pow_recursion(x, y-1);
+return (x * _pow_recursion(x, y - 1));
 }
 }
