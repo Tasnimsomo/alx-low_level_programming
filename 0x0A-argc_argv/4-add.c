@@ -10,25 +10,24 @@
  */
 int main(int argc, char *argv[])
 {
-int total = 0;
-int i;
+int total, i;
+char *p;
 int num;
-if (argv > 1)
+total = 0;
+if (argc > 1)
 {
-if (i = 1; i < argc; i++)
+for (i = 1; argv[i]; i++)
 {
-num = atoi(argv[i])
-if (num != 0 || *argv[i] == '0')
-{
-total = total + num;
-}
+num = strtol(argv[i], &p, 10);
+if (!*p)
+total += num;
 else
 {
 printf("Error\n");
-return (1);
+return 1;
 }
 }
 }
-printf("%d", total);
-return (0);
+printf("%d\n", total);
+return 0;
 }
