@@ -10,6 +10,5 @@
 int main(int argc, char *argv[])
 {
 void(argv);
-printf("%d\n", argc -1); /* argc -1 used to calculate number of command line arguments excluding program name itself*/
-Return (0);
-}
+printf("%d\n", argc -1);
+return (0);  
