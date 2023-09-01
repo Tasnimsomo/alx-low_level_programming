@@ -24,10 +24,10 @@ total += num;
 else
 {
 printf("Error\n");
-return 1;
+return (1);
 }
 }
 }
 printf("%d\n", total);
-return 0;
+return (0);
 }
