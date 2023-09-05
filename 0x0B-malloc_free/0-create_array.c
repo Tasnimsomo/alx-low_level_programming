@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * create_array - creates an array of characters.
@@ -25,4 +26,5 @@ for (i = 0; i < size; i++)
 array[i] = c;
 }
 return array;
+}
 }
