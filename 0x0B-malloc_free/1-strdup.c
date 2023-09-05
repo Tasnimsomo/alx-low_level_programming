@@ -6,20 +6,20 @@
  * @str: string.
  * Return: returns a pointer to a newly allocated space in memory
  */
-char* _strdup(char* str)
+char *_strdup(char *str)
 {
 size_t length;
-char* copy;
+char *copy;
 if (str == NULL)
 {
 return (NULL);
-}    
+}
 length = strlen(str);
-copy = (char*)malloc((length + 1) * sizeof(char));   
+copy = (char *)malloc((length + 1) * sizeof(char));
 if (copy == NULL)
 {
 return (NULL);
-}   
+}
 strcpy(copy, str);
 return (copy);
 }
