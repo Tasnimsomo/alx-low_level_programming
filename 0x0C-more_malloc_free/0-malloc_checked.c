@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * malloc_checked - allocates memory
+ * @b: integer to test.
+ * Return: nothing.
+ */
 void *malloc_checked(unsigned int b)
 {
 void *ptr = malloc(b);
