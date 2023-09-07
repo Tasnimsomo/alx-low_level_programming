@@ -6,16 +6,15 @@
  * @max:  last value of array.
  * Return: a pointer to new array.
  */
-int *array_range(int min, int max)
-{
-int *array, index, size;
+int *array_range(int min, int max) {
+int *arr;
 if (min > max)
-return (NULL);
-size = max - min + 1;
-array = malloc(sizeof(int) * size);
-if (array == NULL)
-return (NULL);
-for (index = 0; index < size; index++)
-array[index] = min++;
-return (array);
+return NULL;
+arr = malloc((max - min + 1) * sizeof(int));
+if (arr == NULL)
+return NULL;
+for (int i = 0; i <= max - min; i++) {
+arr[i] = min + i;
+}
+return arr;
 }
