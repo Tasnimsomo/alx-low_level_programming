@@ -16,7 +16,7 @@ return;
 }
 else if(((*d).name == NULL || (*d).owner ==  NULL))
 {
-printf("nil");
+printf("nil\n");
 }
 else
 {
