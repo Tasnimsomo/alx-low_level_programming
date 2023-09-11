@@ -10,13 +10,13 @@
  */
 void print_dog(struct dog *d)
 {
-if(((*d).name ==  NULL))
+if(((*d).name ==  NULL)
 {
 printf("Name: (nil)\n");
 }
-else if ((*d).owner ==  NULL))
+else if ((*d).owner ==  NULL)
 {
-printf("Age: (nil)\n");  
+printf("Owner: (nil)\n");  
 }
 else
 {
