@@ -22,6 +22,10 @@ else if ((*d).owner ==  NULL)
 {
 printf("Owner: (nil)\n");  
 }
+else if ((*d).age == 0)
+{
+printf("Age: (nil)\n");
+}
 else
 {
 printf("Name: %s\n", (*d).name);
