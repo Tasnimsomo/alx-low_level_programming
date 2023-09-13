@@ -20,13 +20,12 @@ exit (98);
 }
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
-op_func = get_op_func(argv[2]);
-if (op_func == NULL)
+if (argv[2][1] != '\0')
 {
-printf(Error\n);
-exit(99); 
+printf("Error\n");
+exit(99);
 }
-result = op_func(num1, num2);
-printf(%d\n, result);
-return (0);
+result = get_op_func(argv[2])(num1, num2);
+printf("%d\n", result);
+return 0;
 }
