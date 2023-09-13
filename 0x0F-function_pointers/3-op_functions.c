@@ -3,60 +3,61 @@
 
 /**
  * op_add - sums 2 integers
- * @a: integer 1
- * @b: integer 2
+ * @num1: integer 1
+ * @num2: integer 2
  */
-int op_add(int a, int b)
+int op_add(int num1, num2)
 {
-return (a + b);
+return (num1 + num2);
 }
 
 /**
  * op_sub - difference of 2 integers
- * @a: int 1
- * @b: int 2
+ * @num1: integer 1
+ * @num2: integer 2
  */
-int op_sub(int a, int b)
+int op_sub(int num1, int num2)
 {
-return (a - b);
+return (num1 - num2);
 }
 
 /**
  * op_mul - multiplies 2 integers
- * @a: int 1
- * @b: int 2
+ * @num1: integer 1
+ * @num2: integer 2
+ 
  */
-int op_mul(int a, int b)
+int op_mul(int num1, int num2)
 {
-return (a * b);
+return (num1 * num2);
 }
 
 /**
  * op_div - division of 2 integers.
- * @a: int 1
- * @b: int 2
+ * @num1: int 1
+ * @num2: int 2
  */
-int op_div(int a, int b)
+int op_div(int num1, int num2)
 {
-if (b == 0)
+if (num2 == 0)
 {
 printf("Error\n");
 exit(99);
 }
-return (a / b);
+return (num1 / num2);
 }
 
 /**
  * op_mod - remainder of division a,b
- * @a: int 1
- * @b: int 2
+ * @num1: int 1
+ * @num2: int 2
  */
-int op_mod(int a, int b)
+int op_mod(int num1, int num2)
 {
-if (b == 0)
+if (num2 == 0)
 {
 printf("Error\n");
 exit(99);
 }
-return (a % b);
+return (num1 % num2);
 }
