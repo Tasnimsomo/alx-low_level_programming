@@ -18,11 +18,11 @@ ops_t ops[] = {
 };
 int i;
 i = 0;
-while (i < 5)
+while (ops[i].op != NULL)
 {
-if (s[0] == ops[i].op[0])
-return ((ops[i].f));
+if (*(ops[i].op) == *s)
+return ops[i].f;
 i++;
 }
-return (NULL);
+return NULL;
 }
