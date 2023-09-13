@@ -2,26 +2,33 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
-/**
- * main - entry point of the program
- * @argc: number of command-line arguments
- * @argv: array of command-line arguments
- *
- * Return: 0 on success, 1 on error
- */
 int main(int argc, char *argv[])
 {
-int num1, num2, result;
-int (*op_func)(int, int);
 if (argc != 4)
 {
-printf(Error\n);
+printf("Error\n");
 exit (98);
 }
-num1 = atoi(argv[1]);
-num2 = atoi(argv[3]);
-op_func = get_op_func(argv[2]);
-if (op_func == NULL)
+int num1 = atoi(argv[1]);
+int num2 = atoi(argv[3]);
+int result;
+int (*op_func)(int, int);
+if (argv[2][1] != '\0')
+{
+printf("Error\n");
+return (99);
+}
+if (argv[2][0] == '+')
+op_func = op_add;
+else if (argv[2][0] == '-')
+op_func = op_sub;
+else if (argv[2][0] == '*')
+op_func = op_mul;
+else if (argv[2][0] == '/')
+op_func = op_div;
+else if (argv[2][0] == '%')
+op_func = op_mod;
+else
 {
 printf("Error\n");
 exit (99);
