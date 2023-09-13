@@ -6,9 +6,7 @@
  *
  * Return: pointer to the corresponding function, or NULL if no match
  */
-int (*get_op_func(char *s))(int, int)
-{
-int i;
+op_t ops[] = {
 ops_t ops[] = {
 {"+", op_add},
 {"-", op_sub},
@@ -17,6 +15,7 @@ ops_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
+int i;
 i = 0;
 while (ops[i].op != NULL)
 {
