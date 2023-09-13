@@ -27,6 +27,6 @@ printf(Error\n);
 exit(99); 
 }
 result = op_func(num1, num2);
-printf(%dn, result);
+printf(%d\n, result);
 return (0);
 }
