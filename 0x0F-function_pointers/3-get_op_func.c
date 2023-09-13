@@ -6,7 +6,8 @@
  *
  * Return: pointer to the corresponding function, or NULL if no match
  */
-op_t ops[] = {
+int (*get_op_func(char *s))(int a, int b)
+{
 ops_t ops[] = {
 {"+", op_add},
 {"-", op_sub},
@@ -17,12 +18,11 @@ ops_t ops[] = {
 };
 int i;
 i = 0;
-while (ops[i].op != NULL)
+while (i < 5)
 {
-if (*(ops[i].op) == *s && *(s + 1) == '\0')
-return (ops[i].f);
+if (s[0] == ops[i].op[0])
+return ((ops[i].f));
 i++;
 }
-printf("Error\n");
-exit(99);
+return (NULL);
 }
