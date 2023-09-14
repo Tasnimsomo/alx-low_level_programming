@@ -15,10 +15,11 @@ return (0);
 }
 else
 {
-int sum = 0;
+int sum;
 int i;
 va_list ptr;
 va_start(ptr, n);
+sum = 0;
 for (i = 0 ; i < n ; i++)
 {
 sum = sum + va_arg(ptr , int);
