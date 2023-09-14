@@ -25,7 +25,7 @@ printf("%d",va_arg(ptr,unsigned int));
 if (separator && i < n - 1)
 printf("%s", separator);
 }
-va_end(ptr);
 printf("\n");
+va_end(ptr);
 }
 }
