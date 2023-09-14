@@ -21,13 +21,13 @@ if (string == NULL)
 {
 printf("(nil)");
 }
-if (separator != NULL && i < (n -1))
-{
-printf("%s%s", string, separator);
-}
 else
 {
 printf("%s", string);
+}
+if (separator != NULL && i < n - 1)
+{
+printf("%s", separator);
 }
 }
 printf("\n");
