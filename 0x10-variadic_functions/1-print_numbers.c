@@ -24,6 +24,6 @@ for (i = 0; i < n; i++)
 printf("%d%s",va_arg(ptr,int),separator);
 }
 va_end(ptr);
-_putchar('\n');
+printf("\n");
 }
 }
