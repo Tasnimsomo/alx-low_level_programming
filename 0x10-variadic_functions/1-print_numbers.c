@@ -21,7 +21,7 @@ else
 {
 for (i = 0; i < n; i++)
 {
-printf("%d%s",va_arg(ptr,int),separator);
+printf("%d%s",va_arg(ptr,unsigned int),separator);
 }
 va_end(ptr);
 printf("\n");
