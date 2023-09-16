@@ -23,4 +23,4 @@ void t_char(va_list va);
 void t_integer(va_list va);
 void t_float(va_list va);
 void t_string(va_list va);
-#endif 
+#endif
