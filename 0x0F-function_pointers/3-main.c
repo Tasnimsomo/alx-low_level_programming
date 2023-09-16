@@ -4,15 +4,17 @@
 
 int main(int argc, char *argv[])
 {
+int (*op_func)(int, int);
 if (argc != 4)
 {
 printf("Error\n");
 exit (98);
 }
-int num1, num2, result;
+int num1;
+int num2;
+int result;
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
-int (*op_func)(int, int);
 if (argv[2][1] != '\0')
 {
 printf("Error\n");
