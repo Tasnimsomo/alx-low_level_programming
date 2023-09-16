@@ -16,7 +16,7 @@ char *string;
 va_start(ptr, n);
 for (i = 0; i < n; i++)
 {
-string  = va_arg(ptr,char*);
+string  = va_arg(ptr, char*);
 if (string == NULL)
 {
 printf("(nil)");
