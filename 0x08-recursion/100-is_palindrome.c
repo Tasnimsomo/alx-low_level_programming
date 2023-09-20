@@ -7,13 +7,13 @@
 
 int length(char *s)
 {
-	if (*s != '\0')
-	{
-		return (1 + long_1(s + 1));
-	}
-	return (0);
-
+if (*s != '\0')
+{
+return (1 + length(s + 1));
 }
+return (0);
+}
+
 /**
  * compare -compares strings at beginning and end
  * @s: input
