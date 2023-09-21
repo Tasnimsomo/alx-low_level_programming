@@ -28,7 +28,7 @@ if (newNode->str == NULL)
 free(newNode);
 return (NULL);
 }
-for (len = 0; str[len]; en++)
+for (len = 0; str[len]; len++)
 newNode->next = *head;
 *head = newNode;
 return (newNode);
