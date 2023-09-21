@@ -12,30 +12,23 @@
 */
 list_t *add_node_end(list_t **head, const char *str)
 {
-/* Allocate memory for a new node*/
+size_t len = 0;
 list_t *newNode = (list_t*)malloc(sizeof(list_t));
 if (newNode == NULL)
 {
-/* Memory allocation failed*/
 return (NULL);
 }
 if (str == NULL)
 {
-/* Invalid input string*/
 free(newNode);
 return (NULL);
 }
-/* Duplicate the input string*/
 newNode->str = strdup(str);
-if (newNode->str == NULL)
+for (len = 0; str[len]; len++)
 {
-/* String duplication failed*/
-free(newNode);
-return (NULL);
 }
-/* Set the next pointer of the new node to NULL*/
+newNode->len = len;
 newNode->next = NULL;
-/* If the list is empty, set the new node as the head*/
 if (*head == NULL)
 {
 *head = newNode;
