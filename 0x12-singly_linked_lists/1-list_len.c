@@ -12,7 +12,7 @@ size_t count = 0;
 while (current != NULL)
 {
 count++;
-current = current->next;
+current = current- >next;
 }
 return (count);
 }
