@@ -25,6 +25,7 @@ newNode->str = strdup(str);
 if (newNode->str == NULL)
 {
 free(newNode);
+return (NULL);
 }
 newNode->next = *head;
 *head = newNode;
