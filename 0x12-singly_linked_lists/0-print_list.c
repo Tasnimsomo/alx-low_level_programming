@@ -18,6 +18,5 @@ printf("[0] (nil)\n");
 count++;
 current = current->next;
 }
-printf("-> %zu elements\n", count);
 return (count);
 }
