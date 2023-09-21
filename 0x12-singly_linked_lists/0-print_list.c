@@ -1,23 +1,23 @@
 #include "lists.h"
 
 /**
- * print_list - prints all the elements of a list_t list.
- * @h: head of list
- * Return: the number of nodes
- */
+print_list - prints all the elements of a list_t list.
+@h: head of list
+Return: the number of nodes
+*/
 size_t print_list(const list_t *h)
 {
-if (h == NULL) 
-{
-printf("[0] (nil)\n");
-return (0);
-}
 const list_t *current = h;
-printf("[");
-while(current != NULL)
+size_t count = 0;
+while (current != NULL)
 {
-printf("%d", current->data);
+if (current->str != NULL)
+printf("[%d] %s\n", current->len, current->str);
+else
+printf("[0] (nil)\n");
+count++;
 current = current->next;
 }
-printf("]\n");
+printf("-> %zu elements\n", count);
+return (count);
 }
