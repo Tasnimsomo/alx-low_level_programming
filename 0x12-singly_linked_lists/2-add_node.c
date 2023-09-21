@@ -24,6 +24,8 @@ return (NULL);
 }
 newNode->str = strdup(str);
 for (len = 0; str[len]; len++)
+{
+}
 newNode->len = len;
 newNode->str = strdup(str);
 newNode->next = *head;
