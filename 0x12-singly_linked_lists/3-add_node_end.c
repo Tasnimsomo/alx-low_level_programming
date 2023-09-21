@@ -10,11 +10,10 @@
  *Return: NULL in case of failure
  *or address or the element
 */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 /* Allocate memory for a new node*/
 list_t *newNode = (list_t*)malloc(sizeof(list_t));
-size_t len = 0;
 if (newNode == NULL)
 {
 /* Memory allocation failed*/
@@ -28,13 +27,12 @@ return (NULL);
 }
 /* Duplicate the input string*/
 newNode->str = strdup(str);
-/* Count the length of the string*/
-for (len = 0; str[len]; len++)
+if (newNode->str == NULL)
 {
-/* Loop to count the length of the string*/
+/* String duplication failed*/
+free(newNode);
+return (NULL);
 }
-/* Set the length of the string in the new node*/
-newNode->len = len;
 /* Set the next pointer of the new node to NULL*/
 newNode->next = NULL;
 /* If the list is empty, set the new node as the head*/
