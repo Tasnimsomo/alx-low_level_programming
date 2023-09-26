@@ -9,13 +9,15 @@
 
 int pop_listint(listint_t **head)
 {
-listint_t *popped;
-int content;
+int data;
+listint_t *h;
+listint_t *current;
 if (*head == NULL)
 return (0);
-popped = *head;
-content = popped->n;
-free(popped);
-*head = (*head)->next;
-return (content);
+current = *head;
+data = curr->n;
+h = curr->next;
+free(current);
+*head = h;
+return (hnode);
 }
