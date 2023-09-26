@@ -9,13 +9,9 @@ size_t print_listint(const listint_t *h)
 {
 const listint_t *current = h;
 size_t count = 0;
-unsigned int len;
 while (current != NULL)
 {
-if (current->str != NULL)
-printf("[%d] %s\n", current->len, current->str);
-else
-printf("[0] (nil)\n");
+printf("[%d] %s\n", current->n);
 count++;
 current = current->next;
 }
