@@ -11,7 +11,7 @@ const listint_t *current = h;
 size_t count = 0;
 while (current != NULL)
 {
-printf("[%d] %s\n", current->n);
+printf("%d\n", current->n);
 count++;
 current = current->next;
 }
