@@ -15,8 +15,8 @@ listint_t *current;
 if (*head == NULL)
 return (0);
 current = *head;
-data = curr->n;
-h = curr->next;
+data = current->n;
+h = current->next;
 free(current);
 *head = h;
 return (data);
