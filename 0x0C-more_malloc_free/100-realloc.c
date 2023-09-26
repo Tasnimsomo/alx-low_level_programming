@@ -15,7 +15,7 @@ char *p;
 unsigned int i, n = new_size;
 char *oldp = ptr;
 if (ptr == NULL)
- {
+{
 p = malloc(new_size);
 return (p);
 }
