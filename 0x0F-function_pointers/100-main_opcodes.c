@@ -3,7 +3,8 @@
 
 void print_opcodes(int num_bytes) {
 unsigned char *ptr = (unsigned char *)print_opcodes;
-for (int i = 0; i < num_bytes; i++)
+int i;
+for (i = 0; i < num_bytes; i++)
 {
 printf("%02x ", ptr[i]);
 }
