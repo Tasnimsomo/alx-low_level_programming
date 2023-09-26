@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *free_list - Frees a list
+ *free_listint - Frees a list
  *@head: A pointer to the list head
  *
  */
