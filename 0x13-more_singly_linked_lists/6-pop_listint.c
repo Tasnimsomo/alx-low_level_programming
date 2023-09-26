@@ -19,5 +19,5 @@ data = curr->n;
 h = curr->next;
 free(current);
 *head = h;
-return (hnode);
+return (data);
 }
