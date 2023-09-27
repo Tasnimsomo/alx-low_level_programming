@@ -3,7 +3,7 @@
 /**
  *add_nodeint - adds a new node at the beginning of a list
  *@head: pointer to the head of the list
- *@n: integer  
+ *@n: integer
  * Return: returns the address to the new element or NULL
  * if failed
 */
