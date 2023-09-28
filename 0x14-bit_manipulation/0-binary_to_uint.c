@@ -1,34 +1,26 @@
 #include <stddef.h> 
 #include <stdbool.h>
 #include "main.h"
-
+/**
+ * binary_to_uint - converts binary number to an unsigned integer
+ * @b: A pointer to binary string
+ * Return: unsigned integer converted number
+ */
 unsigned int binary_to_uint(const char *b)
 {
+unsigned int base = 1, result = 0, len = 0;
 if (b == NULL)
-{
 return (0);
-}
-unsigned int result = 0;
-bool valid_binary = true;
-for (int i = 0; b[i] != '\0'; i++)
+while (b[len])
+len++;
+while (len)
 {
-if (b[i] == '0')
-{
-result = (result << 1);
-}
-else if (b[i] == '1')
-{
-result = (result << 1) | 1;
-}
-else
-{
-valid_binary = false;
-break;
-}
-}
-if (!valid_binary)
-{
+if (b[len - 1] != '0' && b[len - 1] != '1')
 return (0);
+if (b[len - 1] == '1')
+result += base;
+base *= 2;
+len--;
 }
 return (result);
 }
