@@ -3,6 +3,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+
+/**
+ * read_textfile - reads a text file and prints it to the standard output
+ * @filename: name of the file
+ * @letters:  number of letters to be printed
+ *
+ * Return: number of letters read and printed
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
   if (filename == NULL)
