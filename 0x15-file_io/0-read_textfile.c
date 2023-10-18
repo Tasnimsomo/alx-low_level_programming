@@ -23,7 +23,7 @@ free(text);
 return (0);
 }
 r = read(file, text, letters);
-w = write(STDOUT_FILENO, text, let);
+w = write(STDOUT_FILENO, text, r);
 close(file);
 return (w);
 }
