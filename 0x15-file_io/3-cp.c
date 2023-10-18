@@ -20,7 +20,7 @@ exit(0);
 
 /**
   * copy_file - copies content of file to another
-  * @src: source 
+  * @src: source
   * @dest: destination
   * Return:nothing
   */
