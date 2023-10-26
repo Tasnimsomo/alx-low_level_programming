@@ -14,6 +14,9 @@ if (b == NULL)
 {
 return(0);
 }
+while (b[length] != '\0')
+{
+length++;
 for (i = 0; i < length; i++)
 {
 if(b[i] != '0' && b[i] != '1')
@@ -23,6 +26,7 @@ return (0);
 else if (b[i] == '1')
 {
 result += (1 << i);
+}
 }
 }
 return (result);
