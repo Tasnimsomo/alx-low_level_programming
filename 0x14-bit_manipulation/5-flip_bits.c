@@ -12,7 +12,7 @@ unsigned long int result;
 unsigned int count;
 count = 0;
 result = n ^ m;
-while (result != 0)
+while (result > 0)
 {
 count = count + result & 1;
 result >>= 1;
