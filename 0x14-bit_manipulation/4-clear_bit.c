@@ -13,10 +13,8 @@ if (index > 63)
 {
 return (-1);
 }
-i = 1<< index;
+i = 1 << index;
 if (*n & i)
-{
 *n ^= i;
 return (1);
-}
-}    
+}   
