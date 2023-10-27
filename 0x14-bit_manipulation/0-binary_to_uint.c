@@ -7,19 +7,23 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-size_t length = strlen(b);
-int i;
-unsigned int result = 0;
-for (size_t i = 0; i < length; i++)
-{
-if (b[i] != '0' && b[i] != '1')
-{
-return 0;
-}
-else if (b[i] == '1')
-{
-result += (1 << i);
-}
-}
-return result;
+ int length = strlen(b);
+    int i;
+    int result = 0;
+    if (b == NULL)
+    {
+        return(0);
+    }
+    for (i = 0; i < length; i++)
+    {
+        if(b != '0' && b != '1')
+        {
+            return (0);
+        }
+        else if(b[i] == '1')
+        {
+            result += (1 << i);
+        }
+    }
+    return (result);
 }
