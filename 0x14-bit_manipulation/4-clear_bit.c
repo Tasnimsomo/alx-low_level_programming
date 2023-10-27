@@ -17,4 +17,4 @@ i = 1 << index;
 if (*n & i)
 *n ^= i;
 return (1);
-}   
+}
