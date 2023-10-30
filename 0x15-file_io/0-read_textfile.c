@@ -2,9 +2,9 @@
 
 /**
  * read_textfile - reads a text file and prints
- * @filename - name of file you want to read from
- * @letters - number of letters it should read and print
- * Return: bytes read
+ * @filename: name of file you want to read from
+ * @letters:  number of letters it should read and print
+ * Return: always success
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -32,7 +32,7 @@ if (bytesRead <= 0)
 {
 close(file);
 free(buffer);
-return (0);  
+return (0);
 }
 buffer[bytesRead] = '\0';
 bytesWritten = write(STDOUT_FILENO, buffer, bytesRead);
