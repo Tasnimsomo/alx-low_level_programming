@@ -46,4 +46,4 @@ close(file);
 free(buffer);
 return (bytesWritten);
 }
-  
+
