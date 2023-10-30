@@ -6,6 +6,18 @@
 * @argv: string argument
 * Return: 0
 */
+#define BUFFER_SIZE 1024
+
+/**
+ *error_exit - exiting due to an error
+ *@code: code
+ *@message: const char
+ */
+void error_exit(int code, const char *message)
+{
+dprintf(STDERR_FILENO, "%s\n", message);
+exit(code);
+}
 int main(int argc, char *argv[])
 {
 int fd_from;
