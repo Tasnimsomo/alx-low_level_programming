@@ -1,49 +1,34 @@
 #include "search_algos.h"
 
 /**
- * read_textfile - function that reads a text file and prints.
- * @filename: constant char
- * @letters: unsigned integer
- * Return: always success
+ * linear_search - Searches for a value in an array of integers using
+ *                 the Linear search algorithm.
+ * @array: Pointer to the first element of the array to search in.
+ * @size: Number of elements in the array.
+ * @value: The value to search for.
+ *
+ * Return: The first index where value is located,
+ *         or -1 if value is not present in array or if array is NULL.
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+int linear_search(int *array, size_t size, int value)
 {
-	int file;
-	char *buffer;
-	ssize_t bytes_read;
-	ssize_t bytes_written;
+	int found = 0;
+	size_t i;
 
-	if (filename == NULL)
+	if (array == NULL || size == 0)
+		return (-1);
+
+	for (i = 0; i < size; i++)
 	{
-		return (0);
+		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
+		if (array[i] == value)
+		{
+			found = 1;
+			return (i);
+		}
 	}
-	file = open(filename, O_RDONLY);
-	if (file == -1)
-	{
-		return (0);
-	}
-	buffer = (char *)malloc(letters);
-	if (buffer == NULL)
-	{
-		close(file);
-		return (0);
-	}
-	bytes_read = read(file, buffer, letters);
-	if (bytes_read <= 0)
-	{
-		free(buffer);
-		close(file);
-		return (0);
-	}
-	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
-	if (bytes_written != bytes_read)
-	{
-		free(buffer);
-		close(file);
-		return (0);
-	}
-	free(buffer);
-	close(file);
-	return (bytes_written);
+	if (found == 0)
+		return (-1);
+
+	return (-1);
 }
-
